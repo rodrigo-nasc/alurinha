@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
     box-sizing: border-box;
@@ -6,26 +6,29 @@
     padding: 0%;
 }
 
-header{
-    font-family: 'Roboto', sans-serif;
+body{
+    background-color: gainsboro;
+}
+
+.cabecalho{
     background-color: white;
 }
 
-body{
-    background-color:rgb(238, 237, 237);
-}
-
-.container1{
-    margin: 0 15rem;
+.container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
-    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 10rem;
+    height: 100px;
 }
 
-.logo h2{
+.container h2{
+    font-family:  'Roboto Slab', serif;
     font-size: 30px;
+}
+
+.navbar{
+    margin-right: 1.6rem;
 }
 
 .lista{
@@ -33,336 +36,375 @@ body{
     list-style: none;
 }
 
-.lista a:active{
-    color:red
+.lista li{
+    margin-left: 2rem;
+    border: 1px solid lightslategray;
+    padding: 5px 6px;
+    border-radius: 5px;
+    text-align: center;
 }
 
-.lista li{
-    color: grey;
-    border: 1px solid grey;
-    margin-left: 1rem;
-    padding: 0.4rem;
-    border-radius: 5px;
+.lista li:hover{
+    background-color: lightslategray ;
 }
 
 .lista a{
+    color: lightslategray;
     text-decoration: none;
-    color: grey;
-}
-
-main h1{
-    margin: 2rem 15rem;
-    font-family: 'Roboto', sans-serif;
-    font-size: 35px;
-}
-.principal{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 35px;
-    row-gap: 35px;
-    margin: 0 15rem;
-}
-
-.cards{
-    background-color: white;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 2px 2px 3px rgb(163, 162, 162);;
-}
-
-.cards img{
-    width: 60px;
-}
-
-.cards p{
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    padding-top: 10px;
-}
-
-.video{
-    background-color: rgb(88, 88, 240);
-    padding: 2px 0;
-    margin: 1rem 0;
-}
-
-.imagem{
-    grid-area: imagem;
-    align-self: center;
-}
-
-.paragrafos{
-    grid-area: paragrafos;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-}
-
-.paragrafos p{
-    margin:1rem;
-}
-
-.container{
-    column-gap: 1rem;
-    margin: 2rem 15rem;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-   "imagem paragrafos"
-   "imagem botao"
-   ;
-}
-
-.botao{
-    grid-area: botao;
-    text-decoration: none;
-    padding: 10px;
-    align-self: flex-end;
-    margin-bottom: 4px;
-    background-color: orangered;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: white;
-    border-radius: 5px;
+    font-family: 'Roboto Slab', serif;
+    padding: 5px 6px;
 }
 
-.botao a{
-    padding:10px 15px
+.lista a:hover{
+    color: white;
+}
+
+.principal h1{
+    margin: 1rem 10rem;
+    font-family:'Roboto Slab', serif;
+}
+
+.container2{
+    margin: 0 10rem;
+}
+
+.sublista{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sublista img{
+    width: 70px;
+    align-items: center;
+}
+
+.item{
+    width: 23%;
+    background-color: white;
+    margin: 0.5rem;
+    padding: 1rem 0;
+}
+
+.sublista a{
+    text-decoration: none;
+    display: block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.sublista li:nth-child(4n+1){
+    margin-left: 0;
+}
+
+.sublista li:nth-child(4n){
+    margin-right: 0;
+}
+
+.mapa-cursos h2{
+    margin: 1rem 10rem;
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-weight: bold;
+}
+
+.lista-cursos{
+    display: flex;
+    margin: 0 10rem;
+    justify-content: space-between;
+}
+
+.mapa-cursos{
+    background-color: rgba(50,76,100,255);
+    padding: 1rem 0;
+    margin-top: 2rem;
 }
 
 .mapa{
-    background-color:rgb(62, 85, 85);
-    font-family: 'Roboto', sans-serif;
-    padding: 20px;
+    list-style: none;
 }
 
-.mapa h3{
-    margin: 0 14rem;
+.mapa a{
     color: white;
-    font-size: 30px;
+    text-decoration: none;
+    font-family:'Roboto Slab', serif; ;
 }
 
-.mapa p{
-    color: white;
-    font-size: 13px;
-}
-
-h4{
-    padding-left: 5px;
+.mapa-titulo{
     font-size: 25px;
-    border-left: 4px solid;
+    font-family:'Roboto Slab', serif;
+    padding-left: 5px;
     margin-bottom: 1rem;
-}
-
-.sub-cursos{
-    display: flex;
-    margin: 1rem 14rem;
-}
-
-.sub-cursos p{
-    font-size: 20px;
-}
-
-.backend{
-    flex: 25%;
-    color: green;
-}
-
-.frontend{
-    flex: 25%;
-    color: blue;
-}
-
-.frameworks{
-    flex: 25%;
-    color:darkmagenta
-}
-
-.bancodados{
-    flex: 25%;
-    color: orange;
-}
-
-.rodape{
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    margin: 2rem 15rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "img1 img2 img3 botao1"
-    ;
-}
-
-input{
-    padding: 8px;
-    border: 1px solid green;
-    border-radius: 5px 0 0 5px;
-}
-
-label{
-    padding: 5px 7px 5px 3px;
-    border-radius: 5px;
-    color: white;
-    background-color: green;
-}
-
-.img1{
-    grid-area: img1;
-    justify-self: center;
-}
-
-.img2{
-    grid-area: img2;
-    justify-self: center;
-}
-
-.img3{
-    grid-area: img3;
-    justify-self: center;
-}
-
-.botao1{
-    grid-area: botao1;
-    justify-self: end;
-    font-size: 15px;
-    border-radius: 5px;
-}
-
-#botaop{
-    font-size: 15px;
-    margin-bottom: 5px;
     font-weight: bold;
 }
 
-.botaom{
-    background-color: green;
-    border-radius: 5px;
-    opacity: 0.7;
+.mapa-titulo1{
+    color: green;
+    border-left: 5px solid green;
 }
 
-@media only screen and (max-width:900px){
+.mapa-titulo2{
+    color:rgb(0, 145, 255);
+    border-left: 5px solid rgb(0, 145, 255);
+}
+
+.mapa-titulo3{
+    color: rgb(222, 24, 222);
+    border-left: 5px solid rgb(222, 24, 222);
+}
+
+.mapa-titulo4{
+    color: orange;
+    border-left: 5px solid orange;
+}
+
+.video{
+    background-color: rgba(97,155,215,255);
+    padding: 2rem 0;
+    height: auto;
+}
+
+.informacoes{
+    display: flex;
+    margin: 0 10rem;
+    padding: 5px 0;
+    height: 400px;
+}
+
+.estudo{
+    width: 70%;
+    flex-grow: 1;
+}
+
+.vantagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 30%;
+    align-self: center;
+}
+
+.vantagens h3{
+    font-size: 40px;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+.vantagens p{
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    margin: 1rem auto;
+}
+
+.cadastro{
+    background-color: orangered;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+
+.cadastro a{
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: white;
+}
+
+.iframe{
+    width: 100%;
+    height: 387px;
+}
+
+.estudo{
+    flex-grow: 2;
+    margin-right: 0.5rem;
+    align-self: center;
+}
+
+.rodape{
+    margin: 5rem 10rem;
+    align-items: center;
+}
+
+.rodape1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logos{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.patrocinio{
+    flex-grow:2;
+    align-items: center;
+    width: 80%;
+}
+
+.formulario{
+   flex-grow: 1;
+   width: 20%;
+   margin-left: 6rem;
+}
+
+fieldset{
+    display: flex;
+    border: none;
+}
+
+legend{
+    color:black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input{
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #65b56d;
+}
+
+.botao-enviar{
+    background-color: #65b56d;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+}
+
+
+
+@media only screen and (min-width:1024px) and (max-width:1300px){
+    .mapa-cursos h2{
+        margin: 1rem 2rem;
+    }
     
-    body{
-        width: 95%;
-        margin: 0 auto;
+    .lista-cursos{
+        flex-direction: row;
+        margin: 0% 2rem;
     }
 
-    .container1{
-        display: block;
-        text-align: center;
+    .vantagens{
+        width: auto;
+    }
+}
+
+@media only screen and (max-width:1023px){
+
+    .container{
+        flex-direction: column;
+        margin: 0% auto;
+        height: auto;
+        width: 90%;
     }
 
-    main h1{
-        text-align: center;
+    .navbar{
+        margin: 0%;
+        width: 100%;
     }
 
     .lista{
+        flex-direction: column;
+        margin: 0 auto;
         display: block;
     }
 
     .lista li{
-        margin: 1rem 0%;
+        margin: 0% auto;
+        width: 100%;
+        border-radius: 0%;
         border: none;
-        border-bottom: 2px solid gray;
+        border-bottom: 1px solid lightslategray;
     }
 
-    .principal{
-        display: flex;
+    .principal h1{
+        margin: 2rem auto;
+        text-align: center;
+    }
+
+    .container2{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .sublista{
+        flex-direction: column;
+    }
+
+    .item{
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .informacoes{
+        flex-direction: column;
+        height: auto;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .cadastro{
+        margin-top: 3rem;
+    }
+
+    .mapa-cursos{
+        margin: 2rem 0;
+    }
+
+    .mapa-cursos h2{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .lista-cursos{
         flex-direction: column;
         margin: 0 auto;
+        width: 90%;
     }
 
-    .mapa h3{
-        text-align: center;
-    }
-
-    .sub-cursos{
-        margin: 2rem auto;
-    }
-
-    .container{
-        margin: 0;
-        padding: 20px;
-    }
-
-    .rodape{
-        margin: 2rem auto;
-
-    }
-
-    .rodape{
-        display: flex;
-        margin: 0% auto;
-        flex-flow: wrap;
-        justify-content: space-around;
-        text-align: center;
-        padding: 20px 0;
-}
-}
-
-@media only screen and (max-width:890px){
-    body{
-        width: 95%;
-        margin: 0 auto;
-    }
-    
-    .container1{
-        margin: 0% auto;
-    }
-    
-    main{
-        margin: 0 auto;
-    }
-
-    main h1{
-        margin: 1rem auto;
-    }
-
-    .principal{
-        margin: 0 auto;
-    }
-
-    .container{
-        margin: 0%;
-        display: block;
-        padding: 10px 5px;
-    }
-
-    .iframe{
+    .estudo{
         width: 100%;
     }
 
-    .paragrafos{
-        margin: 3rem 0 3rem 0;
+    .vantagens{
+        width: auto;
     }
 
-    .mapa h3{
-        display: block;
-        margin: 1rem 0;
-        text-align: center;
-    }
-
-    .sub-cursos{
-        display: block;
-        margin: 0% auto;
-    }
-
-    .titulos{
-        margin-top: 1rem;
+    .logos{
+        justify-content: space-around;
     }
 
     .rodape{
-        display: flex;
-        margin: 0% auto;
-        flex-flow: wrap;
-        justify-content: space-around;
-        text-align: center;
-        padding: 20px 0;
+        margin: 2rem 0%;
     }
 
-    #botaop{
-        margin-top: 1rem;
+    .rodape1{
+        flex-direction: column;
+        margin: 0% auto;
+        width: 90%;
     }
+
+    .patrocinio{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .formulario{
+        width: auto;
+        margin: 0%;
 }
 
+}
