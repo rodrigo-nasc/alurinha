@@ -177,6 +177,7 @@ body{
     margin: 0 10rem;
     padding: 5px 0;
     height: 400px;
+    width: 79%;
 }
 
 .estudo{
@@ -222,12 +223,11 @@ body{
 }
 
 .iframe{
-    width: 100%;
+    width: 90%;
     height: 387px;
 }
 
 .estudo{
-    flex-grow: 2;
     margin-right: 0.5rem;
     align-self: center;
 }
@@ -286,8 +286,6 @@ input{
     border-radius: 0 5px 5px 0;
     color: white;
 }
-
-
 
 @media only screen and (min-width:1024px) and (max-width:1300px){
     .mapa-cursos h2{
@@ -383,6 +381,7 @@ input{
 
     .estudo{
         width: 100%;
+        text-align: center;
     }
 
     .vantagens{
