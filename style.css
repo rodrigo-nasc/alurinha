@@ -308,6 +308,10 @@ input{
 
 @media only screen and (max-width:1023px){
 
+    .cabecalho{
+        height: 280px;
+    }
+
     .container{
         flex-direction: column;
         margin: 0% auto;
@@ -332,6 +336,10 @@ input{
         border-radius: 0%;
         border: none;
         border-bottom: 1px solid lightslategray;
+    }
+
+    .app{
+        order: -1;
     }
 
     .principal h1{
@@ -371,6 +379,10 @@ input{
     .mapa-cursos h2{
         margin: 0 auto;
         width: 90%;
+    }
+
+    .mapa-titulo{
+        margin: 2rem 0 0 0;
     }
 
     .lista-cursos{
